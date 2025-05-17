@@ -1,16 +1,29 @@
 [
   {
     "id": 1,
-    "name": "Blue Hole",
-    "location": "Belize",
-    "depth": 124,
-    "difficulty": "Advanced"
+    "name": "Mary’s Place",
+    "location": "Roatán, Honduras",
+    "depth": 100,
+    "difficulty": "Intermediate",
+    "lat": 16.3116,
+    "lng": -86.5313
   },
   {
     "id": 2,
-    "name": "Barracuda Point",
-    "location": "Malaysia",
-    "depth": 80,
-    "difficulty": "Intermediate"
+    "name": "West End Wall",
+    "location": "Roatán, Honduras",
+    "depth": 90,
+    "difficulty": "Advanced",
+    "lat": 16.3012,
+    "lng": -86.5985
+  },
+  {
+    "id": 3,
+    "name": "Blue Channel",
+    "location": "Roatán, Honduras",
+    "depth": 60,
+    "difficulty": "Beginner",
+    "lat": 16.3041,
+    "lng": -86.5943
   }
 ]

@@ -1,23 +1,32 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-interface DiveSite {
-  id: number;
-  name: string;
-  location: string;
-  depth: number;
-  difficulty: string;
-}
+const DiveSiteCard = forwardRef(
+  ({ site, selected, onSelect, onPlanDive }, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={`border p-4 rounded shadow cursor-pointer transition ${
+          selected ? 'ring-2 ring-blue-400' : ''
+        }`}
+        onClick={onSelect}
+      >
+        <h2 className='text-xl font-bold'>{site.name}</h2>
+        <p>Location: {site.location}</p>
+        <p>Depth: {site.depth} ft</p>
+        <p>Difficulty: {site.difficulty}</p>
 
-const DiveSiteCard: React.FC<{ site: DiveSite }> = ({ site }) => (
-  <div className='border p-4 rounded shadow'>
-    <h2 className='text-xl font-bold'>{site.name}</h2>
-    <p>Location: {site.location}</p>
-    <p>Depth: {site.depth} ft</p>
-    <p>Difficulty: {site.difficulty}</p>
-    <button className='mt-2 px-4 py-2 bg-blue-500 text-white rounded'>
-      Plan Dive
-    </button>
-  </div>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onPlanDive();
+          }}
+          className='mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700'
+        >
+          Plan Dive
+        </button>
+      </div>
+    );
+  }
 );
 
 export default DiveSiteCard;
