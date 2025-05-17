@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# DiveIQ 🌊🤿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AI-powered dive planning for modern divers.**  
+DiveIQ is a full-stack web application that helps recreational divers plan smarter, safer dives by combining personalized site history, environmental data, and intelligent recommendations all into one interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 **Log & Retrieve Dive Plans**  
+  Create and store dive plans with key site details, dates, notes, and metadata.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌐 **AI-Assisted Recommendations**  
+  Automatically ranks and suggests optimal dive sites using real-time environmental data (e.g. tides, visibility, weather) and historical user inputs.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 📊 **Data-Driven Planning Interface**  
+  Visualize and compare dive plans through a responsive UI with intelligent form validation and contextual guidance.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ⚙️ **Full-Stack TypeScript Architecture**
+  - Backend: Express.js + Prisma + PostgreSQL
+  - Frontend: React + TypeScript + React Hook Form
+  - CI/CD: Docker, GitHub Actions, AWS Hosting
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠 Tech Stack
+
+| Layer             | Tech                                                      |
+| ----------------- | --------------------------------------------------------- |
+| Frontend          | React, TypeScript, React Hook Form, CSS Modules           |
+| Backend           | Node.js, Express, Prisma ORM                              |
+| Database          | PostgreSQL                                                |
+| APIs              | Third-party environmental data APIs (e.g. tides, weather) |
+| DevOps            | Docker, GitHub Actions, AWS                               |
+| Testing (Planned) | Jest, React Testing Library                               |
+
+---
+
+## 📸 Demo & Screenshots
+
+Coming soon at [**diveiq.io**](https://diveiq.io)
+
+---
+
+## 📥 Future Enhancements
+
+- User authentication & saved dive history
+- Environmental overlays and mapping tools
+- Advanced AI dive analytics and recommendations
+- Mobile responsiveness and PWA support
+
+---
+
+## 👋 About the Creator
+
+Built by [Ryan McDaniel](https://ryanmcdaniel.io), a senior software engineer with a background in teaching, dev tools, and product-minded engineering.  
+For more: [linkedin.com/in/ryanpmcdaniel](https://linkedin.com/in/ryanpmcdaniel)
+
+---
