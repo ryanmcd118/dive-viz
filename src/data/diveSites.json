@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Blue Hole",
+    "location": "Belize",
+    "depth": 124,
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 2,
+    "name": "Barracuda Point",
+    "location": "Malaysia",
+    "depth": 80,
+    "difficulty": "Intermediate"
+  }
+]
