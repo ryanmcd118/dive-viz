@@ -38,7 +38,7 @@ DiveIQ is a full-stack web application that helps recreational divers plan smart
 
 ## 📸 Demo & Screenshots
 
-Coming soon at [**diveiq.io**](https://diveiq.io)
+Coming soon at [**diveiq.io**](https://diveiq.io)!
 
 ---
 
